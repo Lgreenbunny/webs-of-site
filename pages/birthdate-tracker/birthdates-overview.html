@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthdates</title>
+
+    <!-- source for table css and javascript: https://datatables.net/examples/styling/bootstrap5.html -->
+
+    <!-- styles from DataTables -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/css/dataTables.bootstrap5.css">
+    <!-- styles from DataTables -->
+    
+    <!-- scripts from DataTables -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.5/js/dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.5/js/dataTables.bootstrap5.js"></script>
+    <!-- scripts from DataTables -->
+
+    <link rel="stylesheet" href="birthdates.css">
+    <link rel="stylesheet" href="toggle-button.css">
+    <script defer src="birthdate-tables.js"></script>
+    <script defer src="toggle-button.js"></script>
+
+</head>
+<body>
+    <h1>Birthdate tracker</h1>
+    <div class="dark-mode-toggle">
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+    </div>
+    <form id="addPersonForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit">Add Person</button>
+    </form>
+    <div class="container">
+        <table id="birthdates" class="table table-striped" style="width: 80%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Birthday in</th>
+                    <th>Birthdate(written out)</th>
+                    <th>Birthdate(normal format)</th>
+                    <th>Extra info</th>
+                </tr>
+            </thead>
+            <tbody></tbody> <!-- Add tbody element here with js -->
+            <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Birthday in</th>
+                    <th>Birthdate(written out)</th>
+                    <th>Birthdate(normal format)</th>
+                    <th>Extra info</th>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </div>
+</body>
+</html>

@@ -24,6 +24,12 @@ section {
     margin: 10px;
 }
 
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
 .box p {
     margin: 5px 10px 5px 10px;
 }

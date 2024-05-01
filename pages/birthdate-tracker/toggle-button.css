@@ -1,0 +1,51 @@
+/* Default light mode styles */
+body.light-mode {
+    background-color: #ffffff !important; /* Light background */
+    color: #333333 !important; /* Dark text */
+}
+
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #333333 !important; /* Dark background */
+    color: #ffffff !important; /* Light text */
+}
+
+/* Example of dark mode for specific elements */
+.dark-mode .navbar {
+    background-color: #333333 !important; /* Dark background for navbar */
+    color: #ffffff !important; /* Light text for navbar */
+}
+
+/* Toggle button styles */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.dark-mode-toggle button {
+    background-color: #ffffff !important; /* Light background */
+    color: #333333 !important; /* Dark text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styles for the button in dark mode */
+.dark-mode-toggle.dark-mode button {
+    background-color: #333333 !important; /* Dark background */
+    color: #ffffff !important; /* Light text */
+}
+
+/* Default light mode styles for table */
+body.light-mode table.table {
+    background-color: #ffffff !important; /* Light background */
+    color: #333333 !important; /* Dark text */
+}
+
+/* Styles for dark mode table */
+body.dark-mode table.table {
+    background-color: #333333 !important; /* Dark background */
+    color: #ffffff !important; /* Light text */
+}
