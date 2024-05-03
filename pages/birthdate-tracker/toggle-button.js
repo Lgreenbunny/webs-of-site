@@ -1,7 +1,7 @@
 let style = localStorage.getItem("style");
 
 if (style == null) {
-    localStorage.setItem("style", "Light");
+    localStorage.setItem("style", "Dark");
 } if (style == "Dark") {
     document.body.classList.toggle('dark-mode');
 }
